@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 2px 0;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 0;
+    width: 90px;
+    text-align: center;
+}
+
+header {
+    background-color: #266285;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.link:hover {
+    color: #266285;
+    background-color: #ffffff;
+    padding: 20px 0;
+    width: 90px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titulosobre {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.imagemsobre {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#home {
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.divisoria {
+    border: solid;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.github {
+    width: 50%;
+}
+
+.divisoria {
+    margin-top: 10px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+
+}

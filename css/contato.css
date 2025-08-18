@@ -1,28 +1,34 @@
+/* Reset para remover margens/paddings padrão e organizar o box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* ======== Estilo geral da página ======== */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* cor de fundo cinza claro */
+    color: #333; /* cor padrão do texto */
 }
 
+/* Centraliza o título principal */
 h1 {
     display: flex;
     justify-content: center;
 }
 
+
+/* ======== Navegação ======== */
 nav {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 50px;              /* espaço entre links */
     padding: 2px 0;
     margin-bottom: 30px;
     position: relative;
-    top: 50px;
+    top: 50px;              /* joga a nav um pouco pra baixo */
 }
 
 .link {
@@ -33,12 +39,14 @@ nav {
     text-align: center;
 }
 
+/* Cabeçalho com fundo azul */
 header {
     background-color: #266285;
     color: #ffffff;
     padding: 20px 0;
 }
 
+/* Efeito hover nos links do menu */
 .link:hover {
     color: #266285;
     background-color: #ffffff;
@@ -49,7 +57,7 @@ header {
 }   
 
 
-
+/* ======== Página "Sobre mim" ======== */
 .sobre-mim {
     display: flex;
     flex-direction: column;
@@ -63,19 +71,17 @@ header {
     margin-bottom: 20px;
 }
 
-
-
-
+/* Caixa da imagem de perfil */
 .imagemsobre {
     margin-top: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve */
     background-color: aliceblue;
-    border-radius: 10px;
+    border-radius: 10px; /* cantos arredondados */
 }
 
 
-
+/* ======== Links de navegação ======== */
 #home {
     top: 20px;
     left: 20px;
@@ -84,12 +90,14 @@ header {
     text-align: center;
 }
 
+/* Classe usada em títulos de seções */
 .titulo {
     text-align: center;
 }
 
+
+/* ======== Formulário de contato ======== */
 .contato {
-    border: #000000 solid 2px;
     text-align: center;
     margin: 20px auto; /* centraliza horizontalmente */
     width: 300px;

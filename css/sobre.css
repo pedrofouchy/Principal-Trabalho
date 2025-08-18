@@ -1,20 +1,24 @@
+/* Zera margens, paddings e define box-sizing para facilitar o controle de layout */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Define fonte padrão, cor de fundo e cor do texto do corpo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Centraliza títulos principais */
 h1 {
     display: flex;
     justify-content: center;
 }
 
+/* Estiliza o menu de navegação, centralizando e espaçando os links */
 nav {
     display: flex;
     justify-content: center;
@@ -25,6 +29,7 @@ nav {
     top: 50px;
 }
 
+/* Estilo base dos links de navegação */
 .link {
     text-decoration: none;
     color: #000000;
@@ -33,12 +38,14 @@ nav {
     text-align: center;
 }
 
+/* Cabeçalho com cor de fundo e padding */
 header {
     background-color: #266285;
     color: #ffffff;
     padding: 20px 0;
 }
 
+/* Efeito hover nos links: troca de cor e fundo, com transição suave */
 .link:hover {
     color: #266285;
     background-color: #ffffff;
@@ -46,10 +53,9 @@ header {
     width: 90px;
     text-align: center;
     transition: all 0.3s ease;
-}   
+}
 
-
-
+/* Seção sobre mim: centraliza conteúdo verticalmente */
 .sobre-mim {
     display: flex;
     flex-direction: column;
@@ -57,15 +63,14 @@ header {
     margin-top: 20px;
 }
 
+/* Estilo do título da seção sobre mim */
 .titulosobre {
     font-size: 2em;
     color: #000000;
     margin-bottom: 20px;
 }
 
-
-
-
+/* Estilo da imagem: margem, sombra, fundo e borda arredondada */
 .imagemsobre {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -74,15 +79,17 @@ header {
     border-radius: 10px;
 }
 
+/* Parágrafos: centralizados, com largura limitada e espaçamento */
 p {
     font-size: 1.2em;
     color: #333;
     text-align: center;
     width: 80%;
     margin-bottom: 20px;
-    line-height: 1.6
+    line-height: 1.6;
 }
 
+/* Estiliza link específico #home */
 #home {
     top: 20px;
     left: 20px;

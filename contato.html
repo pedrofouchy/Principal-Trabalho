@@ -1,38 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="css/contato.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
-    <header>
-  <a href="index.html" id="home"><h1 class="titulo">Pedro Fouchy</h1></a>
-  <nav>
-    <a href="sobre.html" class="link">Sobre mim</a>
-    <a href="formacao.html" class="link">Formação</a>
-    <a href="portifolio.html" class="link">Portfólio</a>
-    <a href="contato.html" class="link">Contato</a>
-  </nav>
+  <header>
+
+    <!--Aba de Navegação-->
+
+    <a href="index.html" id="home"><h1 class="titulo">Pedro Fouchy</h1></a>
+    <nav>
+      <a href="sobre.html" class="link">Sobre mim</a>
+      <a href="formacao.html" class="link">Formação</a>
+      <a href="portifolio.html" class="link">Portfólio</a>
+      <a href="contato.html" class="link">Contato</a>
+    </nav>
   </header>
+
+
+  <!--Seção de Formulário-->
+
+
   <br>
   <h2 class="titulo">Informações para Contato</h2>
 
-   <div class="contato">
-    <p>Telefone: (53) 98159-2952</p>
-    <br>
-    <p>Email: pedrofouchy@hotmail.com</p>
+  <form method="post" id="meu-form" class="contato">
+    <div>
+      <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+      <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+      <input type="tel" name="telefone" id="telefone" placeholder="99999999999" required>
+      <br><br>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
 
-  </div>
- 
 
+  <!--Parte javascript-->
   
+  <script>
+    const form = document.getElementById("meu-form");
 
- 
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // bloqueia envio padrão
 
+      const nome = document.getElementById("nome").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
 
+      if (!nome) {
+        alert("Coloque seu nome");
+        return;
+      }
 
+      // Aceita somente 11 dígitos
+      const regexTel = /^\d{11}$/;
 
+      if (!regexTel.test(telefone)) {
+        alert("Telefone inválido! Use apenas números (11 dígitos).");
+        return;
+      }
+
+      alert("Formulário enviado com sucesso!");
+    });
+  </script>
 </body>
 </html>
